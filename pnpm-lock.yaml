@@ -797,7 +797,7 @@ importers:
         version: 16.5.0
       openai:
         specifier: ^4.91.0
-        version: 4.97.0(zod@3.24.3)
+        version: 4.97.0(ws@8.18.2)(zod@3.24.3)
       zod:
         specifier: ^3.24.2
         version: 3.24.3
@@ -942,6 +942,9 @@ importers:
       npm-check-updates:
         specifier: ^17.1.18
         version: 17.1.18
+      openai:
+        specifier: ^4.28.0
+        version: 4.97.0(ws@8.18.2)(zod@3.24.3)
       uuid:
         specifier: ^9.0.1
         version: 9.0.1
@@ -1236,7 +1239,7 @@ importers:
         version: 1.57.0
       openai:
         specifier: ^4.91.0
-        version: 4.97.0(zod@3.24.3)
+        version: 4.97.0(ws@8.18.2)(zod@3.24.3)
     devDependencies:
       '@types/jest':
         specifier: ^29.5.0
@@ -3529,7 +3532,7 @@ packages:
     dependencies:
       '@langchain/core': 0.3.51(openai@4.97.0)
       js-tiktoken: 1.0.20
-      openai: 4.97.0(zod@3.24.3)
+      openai: 4.97.0(ws@8.18.2)(zod@3.24.3)
       zod: 3.24.3
       zod-to-json-schema: 3.24.5(zod@3.24.3)
     transitivePeerDependencies:
@@ -5127,7 +5130,7 @@ packages:
   /@types/node-fetch@2.6.12:
     resolution: {integrity: sha512-8nneRWKCg3rMtF69nLQJnOYUcbafYeFSjqkw3jCRLsqkWFlHaoQrr5mXmofFGOx3DKn7UfmBMyov8ySvLRVldA==}
     dependencies:
-      '@types/node': 22.15.3
+      '@types/node': 20.17.32
       form-data: 4.0.2
     dev: false
 
@@ -6560,7 +6563,7 @@ packages:
       inquirer: 10.2.2
       langchain: 0.3.24(@langchain/core@0.3.51)(axios@1.9.0)(openai@4.97.0)
       open: 8.4.2
-      openai: 4.97.0(zod@3.24.3)
+      openai: 4.97.0(ws@8.18.2)(zod@3.24.3)
       pusher-js: 8.4.0-rc2
       resolve-package-path: 4.0.3
       uuid: 10.0.0
@@ -9733,7 +9736,7 @@ packages:
         optional: true
     dependencies:
       dotenv: 16.5.0
-      openai: 4.97.0(zod@3.24.3)
+      openai: 4.97.0(ws@8.18.2)(zod@3.24.3)
       zod: 3.24.3
       zod-validation-error: 3.4.0(zod@3.24.3)
     transitivePeerDependencies:
@@ -9830,7 +9833,7 @@ packages:
       '@types/uuid': 10.0.0
       chalk: 4.1.2
       console-table-printer: 2.12.1
-      openai: 4.97.0(zod@3.24.3)
+      openai: 4.97.0(ws@8.18.2)(zod@3.24.3)
       p-queue: 6.6.2
       p-retry: 4.6.2
       semver: 7.7.1
@@ -11508,7 +11511,7 @@ packages:
       is-docker: 2.2.1
       is-wsl: 2.2.0
 
-  /openai@4.97.0(zod@3.24.3):
+  /openai@4.97.0(ws@8.18.2)(zod@3.24.3):
     resolution: {integrity: sha512-LRoiy0zvEf819ZUEJhgfV8PfsE8G5WpQi4AwA1uCV8SKvvtXQkoWUFkepD6plqyJQRghy2+AEPQ07FrJFKHZ9Q==}
     hasBin: true
     peerDependencies:
@@ -11527,6 +11530,7 @@ packages:
       form-data-encoder: 1.7.2
       formdata-node: 4.4.1
       node-fetch: 2.7.0
+      ws: 8.18.2
       zod: 3.24.3
     transitivePeerDependencies:
       - encoding
