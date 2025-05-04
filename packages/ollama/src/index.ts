@@ -808,9 +808,3 @@ Rules:
     };
   }
 }
-
-// Re-export types
-export * from "./types";
-
-// Default export
-export default OllamaProvider;

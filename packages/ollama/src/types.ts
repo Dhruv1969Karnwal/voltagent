@@ -1,7 +1,7 @@
 /**
  * Ollama provider options
  */
-export type OllamaProviderOptions = {
+export interface OllamaProviderOptions {
   /**
    * The base URL of the Ollama API
    * Default: http://localhost:11434
@@ -13,12 +13,12 @@ export type OllamaProviderOptions = {
    * Default: 60000 (60 seconds)
    */
   timeout?: number;
-};
+}
 
 /**
  * Ollama generate request options
  */
-export type OllamaGenerateRequest = {
+export interface OllamaGenerateRequest {
   /**
    * The model name
    */
@@ -70,12 +70,12 @@ export type OllamaGenerateRequest = {
    * If true, the response will be streamed
    */
   stream?: boolean;
-};
+}
 
 /**
  * Ollama chat request options
  */
-export type OllamaChatRequest = {
+export interface OllamaChatRequest {
   /**
    * The model name
    */
@@ -127,12 +127,12 @@ export type OllamaChatRequest = {
    * If true, the response will be streamed
    */
   stream?: boolean;
-};
+}
 
 /**
  * Ollama message format
  */
-export type OllamaMessage = {
+export interface OllamaMessage {
   /**
    * The role of the message author
    */
@@ -142,12 +142,12 @@ export type OllamaMessage = {
    * The content of the message
    */
   content: string;
-};
+}
 
 /**
  * Ollama generate response
  */
-export type OllamaGenerateResponse = {
+export interface OllamaGenerateResponse {
   /**
    * The generated text
    */
@@ -164,12 +164,12 @@ export type OllamaGenerateResponse = {
    * Whether the response is done
    */
   done: boolean;
-};
+}
 
 /**
  * Ollama chat response
  */
-export type OllamaChatResponse = {
+export interface OllamaChatResponse {
   /**
    * The model name
    */
@@ -202,4 +202,4 @@ export type OllamaChatResponse = {
    * Whether the response is done
    */
   done: boolean;
-};
+}
